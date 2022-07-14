@@ -1,0 +1,21 @@
+
+spring:
+  thymeleaf:
+    cache: "false"
+  freemarker:
+    cache: "false"
+  mvc:
+    static-path-pattern: /static/**
+  devtools:
+    livereload:
+      enabled: "true"
+    restart:
+      exclude: /static/**
+  config:
+    import: classpath:/config.yml
+logging:
+  level:
+    org:
+      springframework:
+        nodeValue: INFO
+        web: DEBUG
